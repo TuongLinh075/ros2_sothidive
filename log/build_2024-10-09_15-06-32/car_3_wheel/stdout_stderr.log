@@ -1,0 +1,43 @@
+running egg_info
+creating ../../build/car_3_wheel/car_3_wheel.egg-info
+writing ../../build/car_3_wheel/car_3_wheel.egg-info/PKG-INFO
+writing dependency_links to ../../build/car_3_wheel/car_3_wheel.egg-info/dependency_links.txt
+writing entry points to ../../build/car_3_wheel/car_3_wheel.egg-info/entry_points.txt
+writing requirements to ../../build/car_3_wheel/car_3_wheel.egg-info/requires.txt
+writing top-level names to ../../build/car_3_wheel/car_3_wheel.egg-info/top_level.txt
+writing manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+reading manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/linh/control_ros2/build/car_3_wheel/build
+creating /home/linh/control_ros2/build/car_3_wheel/build/lib
+creating /home/linh/control_ros2/build/car_3_wheel/build/lib/car_3_wheel
+copying car_3_wheel/__init__.py -> /home/linh/control_ros2/build/car_3_wheel/build/lib/car_3_wheel
+running install
+running install_lib
+creating /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel
+copying /home/linh/control_ros2/build/car_3_wheel/build/lib/car_3_wheel/__init__.py -> /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel
+byte-compiling /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/linh/control_ros2/install/car_3_wheel/share/ament_index
+creating /home/linh/control_ros2/install/car_3_wheel/share/ament_index/resource_index
+creating /home/linh/control_ros2/install/car_3_wheel/share/ament_index/resource_index/packages
+copying resource/car_3_wheel -> /home/linh/control_ros2/install/car_3_wheel/share/ament_index/resource_index/packages
+copying package.xml -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel
+creating /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf
+copying urdf/ver2.urdf -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf
+creating /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch
+copying launch/display.launch.py -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch
+creating /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/car_right.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/base_link.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/caster.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/caster_wheel.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/car_left.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+copying meshes/lidar.STL -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes
+running install_egg_info
+Copying ../../build/car_3_wheel/car_3_wheel.egg-info to /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/linh/control_ros2/build/car_3_wheel/install.log'

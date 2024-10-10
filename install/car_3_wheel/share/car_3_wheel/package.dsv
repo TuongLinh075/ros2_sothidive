@@ -1,0 +1,6 @@
+source;share/car_3_wheel/hook/pythonpath.ps1
+source;share/car_3_wheel/hook/pythonpath.dsv
+source;share/car_3_wheel/hook/pythonpath.sh
+source;share/car_3_wheel/hook/ament_prefix_path.ps1
+source;share/car_3_wheel/hook/ament_prefix_path.dsv
+source;share/car_3_wheel/hook/ament_prefix_path.sh

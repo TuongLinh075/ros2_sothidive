@@ -1,0 +1,330 @@
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ROBOT">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0199577884172606 0.0146359012632613 0.0464793655395853"
+        rpy="0 0 0" />
+      <mass
+        value="0.223799650582508" />
+      <inertia
+        ixx="0.000196570907903626"
+        ixy="3.05951588883258E-08"
+        ixz="2.7126553057441E-08"
+        iyy="0.000580171082090499"
+        iyz="3.41696945782041E-08"
+        izz="0.000762791708898177" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="base_link">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+
+
+  <link
+    name="left_a">
+    <inertial>
+      <origin
+        xyz="0.000282178893833676 -0.000370722899637818 -0.0116515652801601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0757432213466125" />
+      <inertia
+        ixx="4.43465519369207E-05"
+        ixy="-6.51017913246205E-09"
+        ixz="3.72628673320127E-08"
+        iyy="4.44838231783776E-05"
+        iyz="-3.80001652125712E-08"
+        izz="8.06165999721569E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/left_a.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/left_a.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_a"
+    type="continuous">
+    <origin
+      xyz="0.02674 0.1052 0.039559"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_a" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="left_a">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+
+
+  <link
+    name="right_a">
+    <inertial>
+      <origin
+        xyz="0.000185131208098266 -0.000427535767192805 0.0116515652801601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0757432213466125" />
+      <inertia
+        ixx="4.44453698934499E-05"
+        ixy="-6.19859457516647E-08"
+        ixz="-1.48944448592089E-08"
+        iyy="4.43850052218483E-05"
+        iyz="5.10949053264749E-08"
+        izz="8.06165999721569E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/right_a.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/right_a.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_a"
+    type="continuous">
+    <origin
+      xyz="0.026879 -0.075838 0.039478"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_a" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="right_a">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <link
+    name="left_be">
+    <inertial>
+      <origin
+        xyz="-0.000343170269554105 -0.000315110397377175 -0.0116515652801601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0757432213466125" />
+      <inertia
+        ixx="4.44814661198521E-05"
+        ixy="1.89837577266406E-08"
+        ixz="-3.44082538048636E-08"
+        iyy="4.43489089954461E-05"
+        iyz="-4.06030283117753E-08"
+        izz="8.06165999721568E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/left_be.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/left_be.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_be"
+    type="continuous">
+    <origin
+      xyz="-0.066501 0.1052 0.039609"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_be" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="left_be">
+    <mu1>100</mu1>
+    <mu2>100</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+
+  <link
+    name="right_be">
+    <inertial>
+      <origin
+        xyz="-0.000224013546980081 -0.000408507438378372 0.0116515652801601"
+        rpy="0 0 0" />
+      <mass
+        value="0.0757432213466124" />
+      <inertia
+        ixx="4.43476659214084E-05"
+        ixy="-1.39305242001416E-08"
+        ixz="3.12083429587779E-08"
+        iyy="4.44827091938899E-05"
+        iyz="4.31111721918385E-08"
+        izz="8.06165999721568E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/right_be.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rubupack/meshes/right_be.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_be"
+    type="continuous">
+    <origin
+      xyz="-0.066626 -0.075838 0.039511"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_be" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
+  <gazebo reference="right_be">
+    <mu1>200</mu1>
+    <mu2>200</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Red</material>
+  </gazebo>
+</robot>
