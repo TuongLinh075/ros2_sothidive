@@ -1,0 +1,45 @@
+[0.490s] Invoking command in '/home/linh/control_ros2/src/rubupack': PYTHONPATH=/home/linh/control_ros2/build/rubupack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/rubupack build --build-base /home/linh/control_ros2/build/rubupack/build install --record /home/linh/control_ros2/build/rubupack/install.log --single-version-externally-managed install_data
+[0.651s] running egg_info
+[0.651s] creating ../../build/rubupack/rubupack.egg-info
+[0.651s] writing ../../build/rubupack/rubupack.egg-info/PKG-INFO
+[0.651s] writing dependency_links to ../../build/rubupack/rubupack.egg-info/dependency_links.txt
+[0.651s] writing entry points to ../../build/rubupack/rubupack.egg-info/entry_points.txt
+[0.652s] writing requirements to ../../build/rubupack/rubupack.egg-info/requires.txt
+[0.652s] writing top-level names to ../../build/rubupack/rubupack.egg-info/top_level.txt
+[0.652s] writing manifest file '../../build/rubupack/rubupack.egg-info/SOURCES.txt'
+[0.653s] reading manifest file '../../build/rubupack/rubupack.egg-info/SOURCES.txt'
+[0.653s] adding license file 'LICENSE'
+[0.653s] writing manifest file '../../build/rubupack/rubupack.egg-info/SOURCES.txt'
+[0.653s] running build
+[0.653s] running build_py
+[0.653s] creating /home/linh/control_ros2/build/rubupack/build
+[0.653s] creating /home/linh/control_ros2/build/rubupack/build/lib
+[0.653s] creating /home/linh/control_ros2/build/rubupack/build/lib/rubupack
+[0.654s] copying rubupack/__init__.py -> /home/linh/control_ros2/build/rubupack/build/lib/rubupack
+[0.654s] running install
+[0.654s] running install_lib
+[0.654s] creating /home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages/rubupack
+[0.654s] copying /home/linh/control_ros2/build/rubupack/build/lib/rubupack/__init__.py -> /home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages/rubupack
+[0.655s] byte-compiling /home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages/rubupack/__init__.py to __init__.cpython-310.pyc
+[0.655s] running install_data
+[0.655s] creating /home/linh/control_ros2/install/rubupack/share/ament_index
+[0.655s] creating /home/linh/control_ros2/install/rubupack/share/ament_index/resource_index
+[0.655s] creating /home/linh/control_ros2/install/rubupack/share/ament_index/resource_index/packages
+[0.656s] copying resource/rubupack -> /home/linh/control_ros2/install/rubupack/share/ament_index/resource_index/packages
+[0.656s] copying package.xml -> /home/linh/control_ros2/install/rubupack/share/rubupack
+[0.656s] creating /home/linh/control_ros2/install/rubupack/share/rubupack/urdf
+[0.656s] copying urdf/ROBOT.urdf -> /home/linh/control_ros2/install/rubupack/share/rubupack/urdf
+[0.656s] creating /home/linh/control_ros2/install/rubupack/share/rubupack/launch
+[0.656s] copying launch/display.launch.py -> /home/linh/control_ros2/install/rubupack/share/rubupack/launch
+[0.656s] copying launch/gazebo.launch.py -> /home/linh/control_ros2/install/rubupack/share/rubupack/launch
+[0.656s] creating /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.656s] copying meshes/left_be.STL -> /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.657s] copying meshes/right_be.STL -> /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.657s] copying meshes/right_a.STL -> /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.658s] copying meshes/base_link.STL -> /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.659s] copying meshes/left_a.STL -> /home/linh/control_ros2/install/rubupack/share/rubupack/meshes
+[0.660s] running install_egg_info
+[0.661s] Copying ../../build/rubupack/rubupack.egg-info to /home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages/rubupack-0.0.0-py3.10.egg-info
+[0.662s] running install_scripts
+[0.677s] writing list of installed files to '/home/linh/control_ros2/build/rubupack/install.log'
+[0.699s] Invoked command in '/home/linh/control_ros2/src/rubupack' returned '0': PYTHONPATH=/home/linh/control_ros2/build/rubupack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/rubupack/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/rubupack build --build-base /home/linh/control_ros2/build/rubupack/build install --record /home/linh/control_ros2/build/rubupack/install.log --single-version-externally-managed install_data

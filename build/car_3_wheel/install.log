@@ -2,8 +2,9 @@
 /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel/__pycache__/__init__.cpython-310.pyc
 /home/linh/control_ros2/install/car_3_wheel/share/ament_index/resource_index/packages/car_3_wheel
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/package.xml
-/home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf/ver4.urdf
+/home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf/ver6.urdf
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch/display.launch.py
+/home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch/a.py
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch/gazebo.launch.py
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes/car_right.STL
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes/base_link.STL
@@ -11,6 +12,7 @@
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes/caster_wheel.STL
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes/car_left.STL
 /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/meshes/lidar.STL
+/home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf
 /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info/PKG-INFO
 /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info/entry_points.txt
 /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info/top_level.txt

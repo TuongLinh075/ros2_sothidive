@@ -1,0 +1,22 @@
+[0.393s] Invoking command in '/home/linh/control_ros2/src/car_3_wheel': PYTHONPATH=/home/linh/control_ros2/build/car_3_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_3_wheel build --build-base /home/linh/control_ros2/build/car_3_wheel/build install --record /home/linh/control_ros2/build/car_3_wheel/install.log --single-version-externally-managed install_data
+[0.552s] running egg_info
+[0.552s] writing ../../build/car_3_wheel/car_3_wheel.egg-info/PKG-INFO
+[0.552s] writing dependency_links to ../../build/car_3_wheel/car_3_wheel.egg-info/dependency_links.txt
+[0.553s] writing entry points to ../../build/car_3_wheel/car_3_wheel.egg-info/entry_points.txt
+[0.553s] writing requirements to ../../build/car_3_wheel/car_3_wheel.egg-info/requires.txt
+[0.553s] writing top-level names to ../../build/car_3_wheel/car_3_wheel.egg-info/top_level.txt
+[0.554s] reading manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+[0.554s] adding license file 'LICENSE'
+[0.555s] writing manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+[0.555s] running build
+[0.555s] running build_py
+[0.555s] running install
+[0.555s] running install_lib
+[0.556s] running install_data
+[0.556s] copying urdf/ver6.urdf -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf
+[0.556s] running install_egg_info
+[0.558s] removing '/home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info' (and everything under it)
+[0.558s] Copying ../../build/car_3_wheel/car_3_wheel.egg-info to /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info
+[0.558s] running install_scripts
+[0.576s] writing list of installed files to '/home/linh/control_ros2/build/car_3_wheel/install.log'
+[0.595s] Invoked command in '/home/linh/control_ros2/src/car_3_wheel' returned '0': PYTHONPATH=/home/linh/control_ros2/build/car_3_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/car_3_wheel build --build-base /home/linh/control_ros2/build/car_3_wheel/build install --record /home/linh/control_ros2/build/car_3_wheel/install.log --single-version-externally-managed install_data

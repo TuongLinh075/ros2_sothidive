@@ -1,6 +1,0 @@
-source;share/rubupack/hook/pythonpath.ps1
-source;share/rubupack/hook/pythonpath.dsv
-source;share/rubupack/hook/pythonpath.sh
-source;share/rubupack/hook/ament_prefix_path.ps1
-source;share/rubupack/hook/ament_prefix_path.dsv
-source;share/rubupack/hook/ament_prefix_path.sh
