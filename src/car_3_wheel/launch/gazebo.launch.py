@@ -20,25 +20,22 @@ def generate_launch_description():
     urdf_file_name = 'ver6.urdf'
     urdf_path = os.path.join(pkg_share, 'urdf', urdf_file_name)
 
-    world_file_name = 'world.world'
-    world_path = os.path.join(pkg_share, 'worlds', world_file_name)
+    # world_file_name = 'world.world'
+    # world_path = os.path.join(pkg_share, 'worlds', world_file_name)
 
     with open(urdf_path, 'r') as infp:
         robot_desc = infp.read()
 
     robot_description = {"robot_description": robot_desc}
 
-    # khoi tao mo phong
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         name='use_sim_time',
         default_value='true',
     )
-
-    declare_world_cmd = DeclareLaunchArgument(
-        name='world',
-        default_value=world_path,
-    )
-
+    # declare_world_cmd = DeclareLaunchArgument(
+    #     name='world',
+    #     default_value=world_path,
+    # )
 
     spawn_robot = Node(
         package='gazebo_ros',
@@ -66,25 +63,27 @@ def generate_launch_description():
         name='joint_state_publisher',
     )
 
-    # rviz2_node = Node(
-    #     package='rviz2',
+    # rviz2 = Node(
+    #     package='rviz2',    
     #     executable='rviz2',
     #     name='rviz2',
     #     output='screen',
     #     parameters=[{'use_sim_time': use_sim_time}]
     # )
     
-    # 
+    # ,LaunchConfiguration('world')
     gazebo = ExecuteProcess(
-        cmd=['gazebo',LaunchConfiguration('world'), '--verbose', '-s', 'libgazebo_ros_factory.so', '-s', 'libgazebo_ros_init.so'],
+        cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so', '-s', 
+        'libgazebo_ros_init.so',],
         output='screen',
     )
 
     return LaunchDescription([
         declare_use_sim_time_cmd,
-        declare_world_cmd,
+        # declare_world_cmd,
         spawn_robot,
         start_joint_state_publisher_cmd,
         robot_state_publisher_node,
         gazebo,
+        # rviz2,
     ])

@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="ver4">
+  name="ver6">
   <link
     name="base_link">
     <inertial>
@@ -11,14 +11,14 @@
         xyz="-0.0222751569698722 0.0118585384555541 0.116332514439535"
         rpy="0 0 0" />
       <mass
-        value="12.8783005904919" />
+        value="0.12" />
       <inertia
-        ixx="0.110515825421358"
-        ixy="-0.000215611801606853"
-        ixz="0.000971112344179321"
-        iyy="0.128895088615439"
-        iyz="0.000357426284463578"
-        izz="0.233156162778662" />
+        ixx="0.0001"
+        ixy="0"
+        ixz="0"
+        iyy="0.0003"
+        iyz="0"
+        izz="0.0002" />
     </inertial>
     <visual>
       <origin
@@ -61,14 +61,14 @@
         xyz="0.0002288419618732 -0.000132204138624934 -0.0180084261510948"
         rpy="0 0 0" />
       <mass
-        value="0.579007065567467" />
+        value="0.1403" />
       <inertia
-        ixx="0.00139158331696"
-        ixy="2.72612647396894E-06"
-        ixz="8.85387209201048E-07"
-        iyy="0.00139093173055907"
-        iyz="-2.59323913956156E-07"
-        izz="0.00263447481829552" />
+        ixx="0.00002"
+        ixy="0"
+        ixz="0"
+        iyy="0.00002"
+        iyz="0"
+        izz="0.0001" />
     </inertial>
     <visual>
       <origin
@@ -129,14 +129,14 @@
         xyz="-0.000260216250702383 -4.61723206129448E-05 0.0180084270297736"
         rpy="0 0 0" />
       <mass
-        value="0.579007235319938" />
+        value="0.1403" />
       <inertia
-        ixx="0.00138975795650939"
-        ixy="-2.29982712912359E-06"
-        ixz="9.20726523880039E-07"
-        iyy="0.00139275709100968"
-        iyz="-5.8498468257902E-08"
-        izz="0.00263447481829551" />
+        ixx="0.00002"
+        ixy="0"
+        ixz="0"
+        iyy="0.00002"
+        iyz="0"
+        izz="0.0001" />
     </inertial>
     <visual>
       <origin
@@ -198,14 +198,14 @@
         xyz="-4.287577813053E-05 -3.94517439857456E-05 -0.0229494304113731"
         rpy="0 0 0" />
       <mass
-        value="0.0206098306469479" />
+        value="0.5" />
       <inertia
-        ixx="8.96575513496906E-06"
-        ixy="6.503869015188E-07"
-        ixz="-1.6807849402754E-08"
-        iyy="9.20046463021548E-06"
-        iyz="-2.0112053676607E-08"
-        izz="8.194942339049E-06" />
+        ixx="0.00004"
+        ixy="0"
+        ixz="0"
+        iyy="0.00004"
+        iyz="0"
+        izz="0.00001"/>
     </inertial>
     <visual>
       <origin
@@ -231,6 +231,15 @@
       </geometry>
     </collision>
   </link>
+
+  <gazebo reference="caster">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Gray</material>
+  </gazebo>
+
   <joint
     name="caster_joint"
     type="continuous">
@@ -260,12 +269,12 @@
       <mass
         value="0.0846021989758955" />
       <inertia
-        ixx="3.34341659764486E-05"
-        ixy="4.83440269761966E-08"
-        ixz="-6.37637246255802E-06"
-        iyy="2.57103236366154E-05"
-        iyz="-3.98693510412154E-08"
-        izz="3.09738148971981E-05" />
+        ixx="0.0004"
+        ixy="0"
+        ixz="0"
+        iyy="0.0004"
+        iyz="0"
+        izz="0.00001" />
     </inertial>
     <visual>
       <origin
@@ -291,6 +300,15 @@
       </geometry>
     </collision>
   </link>
+
+  <gazebo reference="caster_wheel">
+    <mu1>0.1</mu1>
+    <mu2>0.1</mu2>
+    <kp>1000000</kp>
+    <kd>1</kd>
+    <material>Gazebo/Black</material>
+  </gazebo>
+
   <joint
     name="caster_wheel_joint"
     type="continuous">
@@ -310,14 +328,6 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-
-  <gazebo reference="caster_wheel">
-    <mu1>200</mu1>
-    <mu2>200</mu2>
-    <kp>1000000</kp>
-    <kd>1</kd>
-    <material>Gazebo/Black</material>
-  </gazebo>
 
   <link
     name="lidar">
@@ -378,16 +388,17 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-    <!-- Plugin cho Lidar -->
+
+<!-- Plugin cho Lidar -->
   <gazebo reference="lidar">
     <sensor name="lidar" type="ray">
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>10</update_rate> <!-- Tăng tốc độ cập nhật -->
+      <update_rate>10</update_rate> 
       <ray>
         <scan>
           <horizontal>
-            <samples>180</samples> <!-- Tăng độ phân giải quét -->
+            <samples>10</samples> 
             <resolution>1.0</resolution>
             <min_angle>-1.57</min_angle>
             <max_angle>1.57</max_angle>
@@ -395,7 +406,7 @@
         </scan>
         <range>
           <min>0.3</min>
-          <max>20.0</max> <!-- Tăng khoảng cách tối đa -->
+          <max>15.0</max> 
           <resolution>0.015</resolution>
         </range>
         <noise>
@@ -417,44 +428,60 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <!-- <gazebo reference="lidar">
-    <sensor name="lidar" type="ray">
-      <always_on>true</always_on>
-      <visualize>true</visualize>
-      <update_rate>5</update_rate>
-      <ray>
-        <scan>
-          <horizontal>
-            <samples>120</samples>
-            <resolution>1.000000</resolution>
-            <min_angle>-3.14159</min_angle>
-            <max_angle>3.14159</max_angle>
-          </horizontal>
-        </scan>
-        <range>
-          <min>0.3</min>
-          <max>15.0</max>
-          <resolution>0.015</resolution>
-        </range>
-        <noise>
-          <type>gaussian</type>
-          <mean>0.0</mean>
-          <stddev>0.01</stddev>
-        </noise>
-      </ray>
-      <plugin name="scan" filename="libgazebo_ros_ray_sensor.so">
-        <ros>
-          <remapping>~/out:=scan</remapping>
-        </ros>
-        <output_type>sensor_msgs/LaserScan</output_type>
-        <frame_name>lidar</frame_name>
-      </plugin>
-    </sensor>
-  </gazebo>
   <gazebo reference="lidar">
-    <mu1>0.01</mu1>
-    <mu2>0.01</mu2>
     <material>Gazebo/Black</material>
-  </gazebo> -->
+  </gazebo>
+
+  <gazebo>
+    <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
+ 
+      <update_rate>30</update_rate>
+      
+      <!-- wheels -->
+      <left_joint>car_left_joint</left_joint>
+      <right_joint>car_right_joint</right_joint>
+ 
+      <!-- kinematics -->
+      <wheel_separation>0.16</wheel_separation>
+      <wheel_diameter>0.4</wheel_diameter>
+ 
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>20.0</max_wheel_acceleration>
+ 
+      <!-- Receive velocity commands on this ROS topic -->
+      <command_topic>cmd_vel</command_topic>
+ 
+      <!-- output -->
+      <!-- When false, publish no wheel odometry data to a ROS topic -->
+      <publish_odom>true</publish_odom>
+ 
+      <!-- When true, publish coordinate transform from odom to base_footprint -->
+      <!-- I usually use the robot_localization package to publish this transform -->  
+      <publish_odom_tf>true</publish_odom_tf>
+     
+      <!-- When true, publish coordinate transform from base_link to the wheels -->
+      <!-- The robot_state_publisher package is often used to publish this transform -->  
+      <publish_wheel_tf>true</publish_wheel_tf>
+ 
+      <odometry_topic>odom</odometry_topic>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+ 
+      <odometry_source>1</odometry_source>
+      <ros>
+        <remapping>odom:=wheel/odometry</remapping>
+      </ros>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gazebo_ros_joint_state_publisher"
+        filename="libgazebo_ros_joint_state_publisher.so">
+        <update_rate>100</update_rate>
+        <joint_name>caster_joint</joint_name>
+        <joint_name>caster_wheel_joint</joint_name>
+    </plugin>
+  </gazebo>
 
 </robot>

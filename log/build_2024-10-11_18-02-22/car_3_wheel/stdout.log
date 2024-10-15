@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/car_3_wheel/car_3_wheel.egg-info/PKG-INFO
+writing dependency_links to ../../build/car_3_wheel/car_3_wheel.egg-info/dependency_links.txt
+writing entry points to ../../build/car_3_wheel/car_3_wheel.egg-info/entry_points.txt
+writing requirements to ../../build/car_3_wheel/car_3_wheel.egg-info/requires.txt
+writing top-level names to ../../build/car_3_wheel/car_3_wheel.egg-info/top_level.txt
+reading manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/car_3_wheel/car_3_wheel.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying urdf/ver6.urdf -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/urdf
+copying launch/gazebo.launch.py -> /home/linh/control_ros2/install/car_3_wheel/share/car_3_wheel/launch
+running install_egg_info
+removing '/home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/car_3_wheel/car_3_wheel.egg-info to /home/linh/control_ros2/install/car_3_wheel/lib/python3.10/site-packages/car_3_wheel-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/linh/control_ros2/build/car_3_wheel/install.log'
