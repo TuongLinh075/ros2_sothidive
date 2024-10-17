@@ -245,7 +245,7 @@
     type="continuous">
     <origin
       xyz="0.093013 0.012666 0.0995"
-      rpy="0 0 -3.1408" />
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -320,7 +320,7 @@
     <child
       link="caster_wheel" />
     <axis
-      xyz="0 0 1" />
+      xyz="0.76732 0 -0.64126" />
     <limit
       effort="10"
       velocity="10" />
@@ -328,7 +328,6 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-
 
   <link
     name="lidar">

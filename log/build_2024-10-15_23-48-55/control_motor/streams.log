@@ -1,0 +1,23 @@
+[0.466s] Invoking command in '/home/linh/control_ros2/src/control_motor': PYTHONPATH=/home/linh/control_ros2/build/control_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/control_motor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/control_motor build --build-base /home/linh/control_ros2/build/control_motor/build install --record /home/linh/control_ros2/build/control_motor/install.log --single-version-externally-managed install_data
+[0.643s] running egg_info
+[0.643s] writing ../../build/control_motor/control_motor.egg-info/PKG-INFO
+[0.644s] writing dependency_links to ../../build/control_motor/control_motor.egg-info/dependency_links.txt
+[0.644s] writing entry points to ../../build/control_motor/control_motor.egg-info/entry_points.txt
+[0.644s] writing requirements to ../../build/control_motor/control_motor.egg-info/requires.txt
+[0.644s] writing top-level names to ../../build/control_motor/control_motor.egg-info/top_level.txt
+[0.645s] reading manifest file '../../build/control_motor/control_motor.egg-info/SOURCES.txt'
+[0.645s] adding license file 'LICENSE'
+[0.646s] writing manifest file '../../build/control_motor/control_motor.egg-info/SOURCES.txt'
+[0.646s] running build
+[0.646s] running build_py
+[0.646s] running install
+[0.646s] running install_lib
+[0.647s] running install_data
+[0.647s] copying urdf/ver7.urdf -> /home/linh/control_ros2/install/control_motor/share/control_motor/urdf
+[0.648s] copying launch/gazebo.launch.py -> /home/linh/control_ros2/install/control_motor/share/control_motor/launch
+[0.648s] running install_egg_info
+[0.649s] removing '/home/linh/control_ros2/install/control_motor/lib/python3.10/site-packages/control_motor-0.0.0-py3.10.egg-info' (and everything under it)
+[0.649s] Copying ../../build/control_motor/control_motor.egg-info to /home/linh/control_ros2/install/control_motor/lib/python3.10/site-packages/control_motor-0.0.0-py3.10.egg-info
+[0.650s] running install_scripts
+[0.666s] writing list of installed files to '/home/linh/control_ros2/build/control_motor/install.log'
+[0.686s] Invoked command in '/home/linh/control_ros2/src/control_motor' returned '0': PYTHONPATH=/home/linh/control_ros2/build/control_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/linh/control_ros2/install/control_motor/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/control_motor build --build-base /home/linh/control_ros2/build/control_motor/build install --record /home/linh/control_ros2/build/control_motor/install.log --single-version-externally-managed install_data

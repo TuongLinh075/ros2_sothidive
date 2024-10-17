@@ -94,10 +94,10 @@
       <static>1</static>
       <link name='link'>
         <visual name='visual'>
-          <pose>2 3 0.06 0 -0 0</pose>
+          <pose>2 3 0.02 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://mapmap/meshes/test.dae</uri>
+              <uri>model://mapmap/meshes/bbb.dae</uri>
             </mesh>
           </geometry>
         </visual>
@@ -105,13 +105,13 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>-3.10306 -0.252397 0 0 -0 0</pose>
+      <pose>-3.38447 -0.623337 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>49 41000000</sim_time>
-      <real_time>49 154557854</real_time>
-      <wall_time>1728649743 519615100</wall_time>
-      <iterations>49041</iterations>
+      <sim_time>48 245000000</sim_time>
+      <real_time>48 356920620</real_time>
+      <wall_time>1729074304 596780705</wall_time>
+      <iterations>48245</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -123,10 +123,10 @@
         </link>
       </model>
       <model name='mapmap'>
-        <pose>-3.10306 -0.252397 0 0 -0 0</pose>
+        <pose>-3.38447 -0.623337 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-3.10306 -0.252397 0 0 -0 0</pose>
+          <pose>-3.38447 -0.623337 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -138,7 +138,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>6.99113 -9.93936 5.7138 0 0.475643 2.14819</pose>
+        <pose>7.56735 -2.10824 0.785462 -0 0.203643 2.56019</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
